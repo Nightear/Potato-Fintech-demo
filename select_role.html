@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta name="description" content="Potato FinTech CityU Hong Kong CS3382">
+    <meta name="author" content="CS3382 Group 10">
+    <meta name="keywords" content="Potato FinTech CityU Hong Kong CS3382, Potato FinTech, CityU Hong Kong CS3382, CS3382, CS 3382, Potato FinTech, CityU CS3382, &quot;Potato FinTech&quot; CityU Hong Kong CS3382">
+    <title>"Potato FinTech" CityU Hong Kong CS3382</title>
+	<!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.transitions.css" rel="stylesheet">
+    <link href="css/style_filter.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/main.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    
+<style type="text/css">
+  
+    p, h2 {
+        font-family: 'Open Sans', sans-serif;
+
+    }
+          .dropdown-menu > li {
+                margin: 10px 0px;
+            }
+    
+    .color {
+        color: black;
+        text-align: center;
+        
+    }
+    
+    .color:hover {
+        color: coral;
+    }
+    </style>
+    
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <link rel="icon" type="image/png"
+     href="images/logo.png" />
+    <!-- start portfolios -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/fliplightbox.min.js"></script>
+        <script type="text/javascript">
+            $('body').flipLightBox()
+        </script>
+        <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+        <script type="text/javascript">
+            $(function() {
+
+                var filterList = {
+
+                    init : function() {
+
+                        // MixItUp plugin
+                        // http://mixitup.io
+                        $('#portfoliolist').mixitup({
+                            targetSelector : '.portfolio',
+                            filterSelector : '.filter',
+                            effects : ['fade'],
+                            easing : 'snap',
+                            // call the hover effect
+                            onMixEnd : filterList.hoverEffect()
+                        });
+
+                    },
+
+                    hoverEffect : function() {
+
+                        // Simple parallax effect
+                        $('#portfoliolist .portfolio').hover(function() {
+                            $(this).find('.label').stop().animate({
+                                bottom : 0
+                            }, 200, 'easeOutQuad');
+                            $(this).find('img').stop().animate({
+                                top : -30
+                            }, 500, 'easeOutQuad');
+                        }, function() {
+                            $(this).find('.label').stop().animate({
+                                bottom : -40
+                            }, 200, 'easeInQuad');
+                            $(this).find('img').stop().animate({
+                                top : 0
+                            }, 300, 'easeOutQuad');
+                        });
+
+                    }
+                };
+
+                // Run the show!
+                filterList.init();
+
+            });
+        </script>
+<!-- start slider -->
+<link rel="stylesheet" type="text/css" href="css/slider.css" />
+<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+<script type="text/javascript" src="js/jquery.cslider.js"></script>
+    <script type="text/javascript">
+            $(function() {
+
+                $('#da-slider').cslider({
+                    autoplay : true,
+                    bgincrement : 450
+                });
+
+            });
+        </script>
+</head><!--/head-->
+
+<body id="home" class="homepage">
+
+    <header id="header">
+        <nav id="main-menu" class="navbar navbar-default navbar-fixed-top top-nav-collapse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html" rel="home" style="margin-bottom: -1%; margin-top: -1%; margin-left: 5.5%"><img src="images/logo.png" alt="logo"></a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul style="margin-left: -5%; margin-top: 4%;" class="nav navbar-nav">
+                        <li class="scroll"><a class="nav" href="explore_project.html"><big><p class="color">Explore a Project&nbsp&nbsp&nbsp</p></big></a></li>
+                        <li class="scroll"><a class="nav" href="login_ss.html"><big><p class="color" style="text-align: center">Start a Project&nbsp&nbsp&nbsp</p></big></a></li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><big><p class="color" style="text-align: center">About Us&nbsp<span class="caret"></span>&nbsp&nbsp&nbsp</p></big></a>
+        <ul class="dropdown-menu" style="background-color: white">
+         <li><a style="text-align: center; color:black" href="index.html#aboutus"><big>About</big></a></li>
+          <li><a style="text-align: center; color:black" href="index.html#animated-number"><big>FAQ</big></a></li>
+          <li><a style="text-align: center; color:black" href="index.html#contactus"><big>Contact Us</big></a></li>
+        </ul>
+      </li>
+                       <li class="scroll"><a class="nav" href="select_role.html"><big><p class="color">Sign In&nbsp&nbsp&nbsp</p></big></a></li>                      
+                    </ul>
+                </div>
+                
+               
+                
+                
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+    <section id="main-slider" style="height: 200px">
+            <div class="item" style="background-image: url(images/bg1.jpg)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <div class="content">
+                                    <h1 style="color: white; margin-top: 6%; margin-left: 12%; margin-right: 12%; font-size: 36px">Select your role</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div><!--/.item-->
+    </section><!--/#main-slider-->
+   
+
+
+            <div class="container"><!-- start container -->
+                        
+                        <div id="portfoliolist">
+                            <!--<div class="portfolio logo1" data-cat="logo">
+                                <div class="portfolio-wrapper">
+                                    <a href="#"> <img src="images/s1.jpg"  alt="Image 1" /> </a>
+                                    <div class="label_style">
+                                        <a href="#"><span class="icon_1"></span></a>
+                                        <div class="label_text">
+                                            <h2>scarabaeidae</h2>
+                                            <p>Rezonum & Collections</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio app left" data-cat="app">
+                                <div class="portfolio-wrapper">
+                                    <a href="#"> <img src="images/s2.jpg"  alt="Image 2" /> </a>
+                                    <div class="label_style">
+                                        <a href="#"><span class="icon_2"></span></a>
+                                        <div class="label_text">
+                                            <h2>scarabaeidae</h2>
+                                            <p>Rezonum & Collections</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>-->
+                            <div class="portfolio web" data-cat="web">
+                                <div class="portfolio-wrapper">
+                                    <a href="login_ss.html"> <img src="images/r1.jpg"  alt="Image 3" /> </a>
+                                    <div class="label_style">
+                                        <a href="login_ss.html"><span class="icon_3"></span></a>
+                                        <div class="label_text">
+                                            <h2>Student</h2>
+                                            <p>To Start up Projects</p>
+                                            <form>
+                                                <input type="button" onClick="location.href='login_ss.html'" value="Login" />
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio card left" data-cat="card">
+                                <div class="portfolio-wrapper">
+                                    <a href="login_inv.html"> <img src="images/r2.jpg"  alt="Image 4" /> </a>
+                                    <div class="label_style">
+                                        <a href="login_inv.html"><span class="icon_4"></span></a>
+                                        <div class="label_text">
+                                            <h2>Investor</h2>
+                                            <p>To Support Projects</p>
+                                            <form>
+                                                <input type="button" onClick="location.href='login_inv.html'" class="bg" value="Login" />
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div><!-- end container -->
+    <footer id="footer">
+        <div style="margin-top: 1%; margin-bottom: 1%" class="container text-center">
+          All rights reserved © 2017 | This is not a real website. This was designed as part of a school project on web design and usability
+        </div>
+    </footer><!--/#footer-->
+
+    
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/mousescroll.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+	<script src="js/scrolling-nav.js"></script>
+<script>
+
+    $(document).ready(function($) {
+      $("#owl-example").owlCarousel();
+    });
+
+    $("body").data("page", "frontpage");
+
+$("#owl-example").owlCarousel({ 
+        items:3,   
+/*        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [980,9],
+        itemsTablet: [768,5],
+        itemsTabletSmall: false,
+        itemsMobile : [479,4]*/
+})
+
+    </script>
+</body>
+</html>
